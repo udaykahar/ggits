@@ -86,6 +86,27 @@
 <!--Content Division Begin-->
 
   
+ <!-- <div class="col-lg-8 col-md-8 col-sm-7 contents" style="text-align: center">
+  <h4 style="background-color:#021b48;height:30px;color:white;padding:3px">News Letter</h4>
+  <iframe id="hbsyl" height="900px" width="700px" src="news letter/1.pdf" ></iframe>
+  <iframe id="hbsch" height="900px" width="700px" src="news letter/2.pdf" ></iframe>
+  <iframe id="hmsch" height="900px" width="700px" src="news letter/3.pdf" ></iframe>
+  <iframe id="hbmyl" height="900px" width="700px" src="news letter/4.pdf" ></iframe>
+  <form class="form-inline" style="margin-bottom:50px;">
+        <div style="background-color:#021b48;height:55px;color:white;padding:3px " class="form-group">
+          <label  for="sch">Choose News Letter</label>
+          <select class="form-control input-lg" id="prog">
+            
+            <option>Letter 1</option>
+            <option>Letter 2</option>
+            <option>Letter 3</option>
+            <option>Letter 4</option>
+          </select>
+          
+        </div>
+    </form>
+  
+</div> -->
  <div class="col-lg-8 col-md-8 col-sm-7 contents" style="text-align: center">
   <h4 style="background-color:#021b48;height:30px;color:white;padding:3px">News Letter</h4>
   <iframe id="hbsyl" height="900px" width="700px" src="news letter/1.pdf" ></iframe>
@@ -150,5 +171,29 @@
     $( "select" ).change( checkp );
 });
 </script>
+<!-- <script type="text/javascript">
+  function checkp()
+  {
+    var prog=$("#prog").val();
+    
+    if (prog=="Letter 1") {
+        $("#hbsyl").show(600);$("#hbsch").hide(400);$("#hmsch").hide(400);$("#hbmyl").hide(400);};
+      if (prog=="Letter 2") {
+      $("#hbsyl").hide(400);$("#hbsch").show(600);$("#hmsch").hide(400);$("#hbmyl").hide(400);};
+      if (prog=="Letter 3") {
+      $("#hbsyl").hide(400);$("#hbsch").hide(400);$("#hmsch").show(600);$("#hbmyl").hide(400);};
+      if (prog=="Letter 4") {
+      $("#hbsyl").hide(400);$("#hbsch").hide(400);$("#hmsch").hide(400);$("#hbmyl").show(600);};
+        
+    
+  }
+  $("document").ready(function() {
+    $("#hbsch").hide();
+    $("#hbsyl").show();
+    $("#hmsch").hide();
+    $("#hbmyl").hide();
+    $( "select" ).change( checkp );
+});
+</script> -->
 </body>
 </html>

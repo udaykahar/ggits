@@ -86,8 +86,45 @@
 
 <!--Content Division Begin-->
 <div class="col-lg-8 col-md-8 col-sm-7 contents" >
-  <h3 class="he3">Faculty Participations</h3>
-    <iframe height="600px" width="730px" src="pdf/Faculty Participation ECE.pdf"></iframe>
+  <h4 class="he3" style="width: 900px;text-align:center;"><b>Faculty Publications</b></h4>
+  <!--Faculty Publications Tabs-->
+  <ul class="nav nav-tabs" style="display:flex;justify-content:center;background-color:#021b38;font-size:16px;font-weight:bold;width: 900px;">
+    <li class="list_show" id="list_Faculty_Publications_2022-23" onClick="facultyHandler(this.id,this.innerHTML)" role="presentation" class="active"><a href="#Faculty_Publications" aria-controls="about" role="tab"data-toggle="tab">2022-2023</a></li>
+
+    <li role="presentation" id="list_Faculty_Publications_2021-22" onClick="facultyHandler(this.id,this.innerHTML)"><a href="#Faculty_Publications" aria-controls="vision" role="tab" data-toggle="tab">2021-2022</a></li>
+    <li role="presentation" id ="list_Faculty_Publications_2020-21" onClick="facultyHandler(this.id,this.innerHTML)"><a href="#Faculty_Publications" aria-controls="mission" role="tab" data-toggle="tab">2020-2021</a></li>
+    <li role="presentation" id ="list_Faculty_Publications_2019-20" onClick="facultyHandler(this.id,this.innerHTML)"><a href="#Faculty_Publications" aria-controls="Objective" role="tab" data-toggle="tab">2019-2020</a></li>
+  
+    
+  </ul>
+
+<!-- Faculty iframe -->
+  <div role="tabpanel" class="tab-pane fade in active show" >
+    <iframe height="590px" id ="Faculty_Publications" width="900px" src="pdf/publications/Faculty_Publications_2022-2023.pdf"></iframe>
+    <br><br>
+  </div>
+  
+
+
+  <!-- Student Publications -->
+  <h4 class="he3" style="width: 900px;text-align:center;"><b>Student Publications</b></h4>
+  <!--Student Publications Tabs-->
+  <ul class="nav nav-tabs" style="display:flex;justify-content:center;background-color:#021b38;font-size:16px;font-weight:bold;width: 900px;">
+    <li class="list_show" id="list_Student_Publications_2022-23" onClick="studentHandler(this.id,this.innerHTML)" role="presentation" class="active"><a href="#Student_Publications" aria-controls="about" role="tab"data-toggle="tab">2022-2023</a></li>
+
+    <li role="presentation" id="list_Student_Publications_2021-22" onClick="studentHandler(this.id,this.innerHTML)"><a href="#Student_Publications" aria-controls="vision" role="tab" data-toggle="tab">2021-2022</a></li>
+    <li role="presentation" id ="list_Student_Publications_2020-21" onClick="studentHandler(this.id,this.innerHTML)"><a href="#Student_Publications" aria-controls="mission" role="tab" data-toggle="tab">2020-2021</a></li>
+    <li role="presentation" id ="list_Student_Publications_2019-20" onClick="studentHandler(this.id,this.innerHTML)"><a href="#Student_Publications" aria-controls="Objective" role="tab" data-toggle="tab">2019-2020</a></li>
+  
+    
+  </ul>
+
+
+  <div role="tabpanel" class="tab-pane fade in active show" >
+    <iframe height="590px" id ="Student_Publications" width="900px" src="pdf/publications/STUDENT PUBLICATIONS 2022-2023.pdf"></iframe>
+    <br><br>
+  </div>
+
 </div>
 <!--News Section -->
 <!-- <ul class="nav nav-pills nav-stacked col-lg-2 col-md-2 col-sm-2" style="text-align:left; padding: 7px;">
@@ -105,5 +142,45 @@
     <p style="padding: 10px;font-size:16px;margin:4px">&copy; Gyan Ganga Institute Of Technology And Sciences
    <span style="float:right"></span></p>
 </nav>
+<script>
+
+
+  function facultyHandler(id,itsclass,value) {
+   
+    let year=document.getElementById(id).children[0].innerHTML;
+    // console.log(year);
+    let contentIDText=`Faculty_Publications_`+year;
+    // console.log(contentIDText);
+    let src=`pdf/publications/Faculty_Publications_${year}.pdf`;
+    // console.log(src);
+    let contentID=document.getElementById(`Faculty_Publications`);
+   
+    // console.log(contentID);
+    
+    // console.log(contentID.src);
+    contentID.setAttribute("src",src);
+    // console.log(contentID.src);
+    
+  }
+
+  function studentHandler(id,itsclass,value) {
+   
+   let year=document.getElementById(id).children[0].innerHTML;
+   // console.log(year);
+  //  let contentIDText=`Faculty_Publications_`+year;
+   // console.log(contentIDText);
+  //  pdf/publications/STUDENT PUBLICATIONS 2022-2023.pdf
+   let src=`pdf/publications/STUDENT PUBLICATIONS ${year}.pdf`;
+   // console.log(src);
+   let contentID=document.getElementById(`Student_Publications`);
+  
+   // console.log(contentID);
+   
+   // console.log(contentID.src);
+   contentID.setAttribute("src",src);
+   // console.log(contentID.src);
+   
+ }
+  </script>
 </body>
 </html>
