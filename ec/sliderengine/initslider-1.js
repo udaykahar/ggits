@@ -6,7 +6,8 @@ jQuery(document).ready(function(){
         if( scripts[i].src && scripts[i].src.match(/initslider-1\.js/i))
             jsFolder = scripts[i].src.substr(0, scripts[i].src.lastIndexOf("/") + 1);
     }
-    jQuery("#amazingslider-1").amazingslider({
+    
+    jQuery(".amazingslider-1").amazingslider({
         sliderid:1,
         jsfolder:jsFolder,
         width:480,
