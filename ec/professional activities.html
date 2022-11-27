@@ -15,6 +15,11 @@
     <!-- Slider Files -->
 
    <style type="text/css">
+    :root {
+  --width_primary: 700px;
+  --width_secondary: 900px;
+}
+
    body
    {
     width: 100%;
@@ -85,25 +90,28 @@
             <li><a href="Gallery.html">Gallery</a></li>
             <li><a href="dept.news Letter.html">Dept. News Letter</a></li>
             <li><a href="E-Magazine.html">E-Magazine</a></li>
-            <li ><a href="centerofe.html">COE and MOU</a></li>
+            <li ><a href="centerofe.html">MOU</a></li>
   <li  style="border:none"><a href="budget.html">Budget</a></li>
     </ul>
   <!--Side nav Ends-->
 
 <!--Content Division Begin-->
 <div class="col-lg-8 col-md-8 col-sm-7 contents" >
-	<h3 class="he3">Seminar and Guest Lectures Conducted by EC Department</h3>
-  <iframe height="700px"; width="700px"; src="pdf/Professional activities.pdf"></iframe>
+	<!-- <h3 class="he3">Seminar and Guest Lectures Conducted by EC Department</h3> -->
+  <h4 class="he3" style="width:var(--width_secondary);text-align:center;"><b>Seminar and Guest Lectures Conducted by EC Department</b></h4>
+  <iframe style="width: var(--width_secondary);height: var(--width_primary);"src="pdf/professional activities/professional activities.pdf"></iframe>
   
-  <h3 class="he3">Other Activities</h3>
-  <iframe height="700px"; width="700px"; src="pdf/activities.pdf"></iframe>
+  <!-- <h4 class="he3" style="width:var(--width_secondary);text-align:center;"><b>Other Activities</b></h4> -->
+  <!-- <h3 class="he3">Other Activities</h3> -->
+  <!-- <iframe style="width: var(--width_secondary);height: var(--width_primary);"src="pdf/activities.pdf"></iframe> -->
   
   
-  <h3 class="he3">Outhouse Trainings and Tie-ups</h3>
+  <!-- <h3 class="he3">Outhouse Trainings and Tie-ups</h3> -->
+  <h4 class="he3" style="width:var(--width_secondary);text-align:center;"><b>Outhouse Trainings and Tie-ups</b></h4>
   <div role="tabpanel" class="tab-pane fade in active" id="training">
     <br>
     <img src="./images/OuthouseTrainings.jpg" alt="training" style="
-    width: 67rem;
+    width:var(--width_secondary);
 ">
   </div>
   <!-- <table class="table table-bordered">

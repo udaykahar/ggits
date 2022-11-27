@@ -7,7 +7,19 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
+  <!-- Slider Files-->
+	<script src="sliderengine/jquery.js"></script>
+	<script src="sliderengine/amazingslider.js"></script>
+	<link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+	<script src="sliderengine/initslider-1.js"></script>
+	<!-- Slider Files -->
    <style type="text/css">
+    :root{
+      --width_primary:700px;
+      --height_primary:800px;
+      --width_secondary:900px;
+      --height_secondary:700px;
+    }
    body
    {
     width: 100%;
@@ -78,19 +90,39 @@
             <li><a href="Gallery.html">Gallery</a></li>
             <li><a href="dept.news Letter.html">Dept. News Letter</a></li>
             <li><a href="E-Magazine.html">E-Magazine</a></li>
-                  <li ><a href="centerofe.html">COE and MOU</a></li>
-  <li  style="border:none"><a href="budget.html">Budget</a></li>
-    </ul><!--Side nav Ends-->
+                  <li ><a href="centerofe.html">MOU</a></li>
+                  <li  style="border:none"><a href="budget.html">Budget</a></li>
+                </ul><!--Side nav Ends-->
+                
+                <!--Content Division Begin-->
+                
+                <div class="col-lg-8 col-md-8 col-sm-7 contents" style="text-align:center">
+                  <!-- <h3 class="he3"></h3> -->
+                  <h4 class="he3" style="width:var(--width_secondary);text-align:center;"><b>Student Project Designs</b></h4>
+  <div id="amazingslider-wrapper-1"
+				style="max-width: 800px; position: relative; margin: 20px 10px 80px 150px; display: block">
+				<div class="amazingslider-1" style="position: relative; margin: 0px auto; display: block">
+					<ul class="amazingslider-slides" style="display: none">
 
-<!--Content Division Begin-->
-
-<div class="col-lg-8 col-md-8 col-sm-7 contents" style="text-align:center">
-  <h3 class="he3">Minor Project</h3>
-  <!--<iframe height="800px" width="700px" src="pdf/Student_Project_Design.pdf"></iframe>-->
-  <iframe height="800px" width="700px" src="pdf/Minor_project.pdf"></iframe><br>
-   <h3 class="he3">Major Project</h3>
-   <iframe height="800px" width="700px" src="pdf/Major_project .pdf"></iframe>
+						<li><img src="pdf/student project design/images/sdp1.jpg" style="object-fit: cover ;"width="300" height="180" /></li>
+						<li><img src="pdf/student project design/images/sdp2.jpg" width="300" height="180" /></li>
+						<li><img src="pdf/student project design/images/sdp3.jpg" style="object-fit:contain ;" width="300" height="180" /></li>
+						
+					</ul>
+				</div>
+			</div>
+  <!-- <iframe style="width: var(--width_secondary);height: var(--width_primary);" src="pdf/student project design/Student Project Design.pdf"></iframe> -->
+  <h4 class="he3" style="width:var(--width_secondary);text-align:center;"><b>Minor Project</b></h4>
+  <iframe style="width: var(--width_secondary);height: var(--width_primary);"src="pdf/Minor_project.pdf"></iframe>
+  <h4 class="he3" style="width:var(--width_secondary);text-align:center;"><b>Major Project</b></h4>
+  <iframe style="width: var(--width_secondary);height: var(--width_primary);"src="pdf/Major_project .pdf"></iframe>
   
+  
+  <!--<iframe height="800px" width="700px" src="pdf/Student_Project_Design.pdf"></iframe>-->
+  <!-- <iframe height="800px" width="var(--width_primary);" src="pdf/Minor_project.pdf"></iframe><br>
+   <h3 class="he3"></h3>
+   <iframe height="var(--);" width="var(--width_primary);" src="pdf/Major_project .pdf"></iframe>
+   -->
 </div>
 
 
