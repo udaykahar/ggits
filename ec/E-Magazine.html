@@ -81,8 +81,8 @@
       <li><a href="student acheivements.html">Student Achievements</a></li>
       <li><a href="student project designs.html">Student Project Designs</a></li>
       <li><a href="research.html">Research and Publication</a></li>
-      <li><a href="clubs.html">Industry Linkage</a></li>
-      <li><a href="library.html">Library</a></li>
+      <!-- <li><a href="clubs.html">Industry Linkage</a></li> -->
+      <!-- <li><a href="library.html">Library</a></li> -->
       <li><a href="placements.html">Placements</a></li>
       <li><a href="Gallery.html">Gallery</a></li>
       <li><a href="dept.news Letter.html">Dept. News Letter</a></li>
@@ -93,7 +93,41 @@
     <!--Side nav Ends-->
 
     <!--Content Division Begin-->
-    <div class="col-lg-8 col-md-8 col-sm-7 contents">
+    <div class="col-lg-8 col-md-8 col-sm-7 contents" >
+      <!--Slider begin-->
+      <!--<div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:480px;margin:0px auto 48px;">
+              <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+                  <ul class="amazingslider-slides" style="display:none;">
+                      <li><img src="images/csi1.jpg" alt="" />
+                      </li>
+                      <li><img src="images/csi2.jpg" alt="" data-description="" />
+                      </li>
+                  </ul>
+                  <ul class="amazingslider-thumbnails" style="display:none;">
+                      <li><img src="images/l1-tn.jpg" alt="Computer Lab" /></li>
+                      <li><img src="images/Picture7-tn.jpg" alt="QR-HUBS Model" /></li>
+      
+                  </ul>
+              </div>
+          </div>-->
+      <!--Slider end-->
+        <!-- <h3 class="he3">CSI Activities</h3>
+       <iframe height="600px" width="700px" src="pdf/professional societies/professional society.pdf"></iframe> -->
+       <h4 class="he3" style="width: 900px;text-align:center;"><b>E-Magzines</b></h4>
+       <!--Faculty Publications Tabs-->
+       <ul class="nav nav-tabs" style="display:flex;justify-content:center;background-color:#021b38;font-size:16px;font-weight:bold;width: 900px;">
+         <li class="list_show" id="list_E-magzines_2022-2021" onClick="Handler(this.id,this.innerHTML)" role="E-magzines" class="active"><a href="#Professional_Societies" aria-controls="about" role="tab"data-toggle="tab">2021-2022</a></li>
+         <li class="list_show" id="list_E-magzines_2020-2019" onClick="Handler(this.id,this.innerHTML)" role="E-magzines" class="active"><a href="#Professional_Societies" aria-controls="about" role="tab"data-toggle="tab">2020-2021</a></li>
+         <li  class="list_show"id="list_E-magzines_2021-2020" onClick="Handler(this.id,this.innerHTML)" role="E-magzines" class="active"><a href="#Professional_Societies" aria-controls="about" role="tab"data-toggle="tab">2019-2020</a></li>
+       </ul>
+      
+      <!-- Faculty iframe -->
+       <div role="tabpanel" class="tab-pane fade in active show" >
+         <iframe height="635px" id ="E-magzines" width="900px" src="pdf/E-magzines/TECH ADVISOR 2021-2022.pdf"></iframe>
+         <br><br>
+       </div>
+      </div>
+    <!-- <div class="col-lg-8 col-md-8 col-sm-7 contents">
       <div class="container2">
 
 
@@ -160,9 +194,9 @@
                   src="images/download.png" /></a></td>
           </tr>
         </table>
-      </div>
+      </div>-->
       <!--<iframe  height="950px" width="700px" src="pdf/Insight_Magazine.pdf"></iframe>-->
-    </div>
+    <!--</div> -->
     <!--News Section -->
     <!-- <ul class="nav nav-pills nav-stacked col-lg-2 col-md-2 col-sm-2" style="text-align:left; padding: 7px;">
       <li class="nav-header"
@@ -190,6 +224,29 @@
 
 
 
+  <script>
+
+
+    function Handler(id,itsclass,value) {
+     
+      let year=document.getElementById(id).children[0].innerHTML;
+      // console.log(year);
+      // pdf/professional societies/professional society 2022-2021.pdf
+      
+      let src=`pdf/E-magzines/TECH ADVISOR ${year}.pdf`;
+      // let src=`pdf/publications/Faculty_Publications_${year}.pdf`;
+      // console.log(src);
+      let contentID=document.getElementById(`E-magzines`);
+     
+      // console.log(contentID);
+      
+      // console.log(contentID.src);
+      contentID.setAttribute("src",src);
+      // console.log(contentID.src);
+      
+    }
+  
+    </script>
 
 
 </body>
